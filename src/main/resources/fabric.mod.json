@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fallingleavesseasons",
+  "version": "${version}",
+  "name": "Falling Leaves Seasons",
+  "description": "Aendert die Leaf Particle Chance von Falling Leaves Plus je nach Jahreszeit aus Serene Seasons (Herbst mehr Laub, Winter keins).",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "fallingleavesseasons.FallingLeavesSeasons"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "fallingleavesseasons.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fallingleavesplus": "*",
+    "sereneseasons": "*"
+  }
+}
